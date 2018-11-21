@@ -4,11 +4,11 @@
 
 A small script for syncing ssh-config git repo and team member's local ssh-config.
 
-# Disclaimer:
+### Disclaimer:
 
 THIS SCRIPT IS DOING STUFF WITH YOUR SSH KEYS IT BACKS UP EVERYTHING BEFORE CHANGES, BUT MAKE SURE HOW IT WORKS AND WHAT IT DOES BEFORE USING IT.
 
-# Requirements:
+### Requirements:
 
 	1 - Cron 
 
@@ -16,11 +16,11 @@ THIS SCRIPT IS DOING STUFF WITH YOUR SSH KEYS IT BACKS UP EVERYTHING BEFORE CHAN
 
 	3 - placing your git repository's ssh-clone address in line `3` of `setup.sh`
 
-# 1 - Clone the ssh-config-sync repo to your workspace
+### 1 - Clone the ssh-config-sync repo to your workspace
 
-# 2 - Make sure there are no ownership problems with your `~/.ssh` directory.
+### 2 - Make sure there are no ownership problems with your `~/.ssh` directory.
 
-# 3 - Run the `setup.sh` Script.
+### 3 - Run the `setup.sh` Script.
 The script will :
  
 	1 - Backup your own ssh-config file and do a date-tagged backup under ~/ssh/config-backup.
@@ -37,10 +37,10 @@ The script will :
 
 	6 - Shows you the right command to put in your crontab
 
-# Note: 
+### Note: 
 	To sync manually, just simply run `ssh-key-sync` in your terminal
 
-# 4 - The `ssh-key-sync.sh`.
+### 4 - The `ssh-key-sync.sh`.
 The script does:
 
 	1 - (Backup) commits and pushes the changes made in the your branch ( which is named as your unix username ) with an automatic commit message. 
